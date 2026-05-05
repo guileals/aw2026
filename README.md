@@ -1,67 +1,142 @@
-# IFRN - Campus Macau
-# Curso Técnico Integrado em Informática
-# AUTORIA WEB
-# Prof. Guilherme Leal Santos
+<a id="readme-top"></a>
 
-## 30/04 - Introdução a HTML
+<!-- PROJECT SHIELDS (opcional) -->
+<!--
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/usuario/repositorio.svg)]()
+-->
 
-### Introdução
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <h1>IFRN - Campus Macau</h1>
+  <h3>Curso Técnico Integrado em Informática</h3>
+  <h4>Autoria Web</h4>
+  <p><strong>Prof. Guilherme Leal Santos</strong></p>
+</div>
 
-As principais tags HTML se dividem em grupos que estruturam o documento (html, head, body), organizam o conteúdo (títulos, parágrafos, listas, links, imagens) e dão significado semântico ao layout (header, nav, main, section, article, aside, footer, etc.).
+---
 
-Um elemento HTML é formado, em geral, por uma tag de abertura, conteúdo e tag de fechamento, podendo ter atributos para configurar detalhes (por exemplo, <p class="destaque">Texto</p>).
+## Sumário
 
-Os elementos indicam um texto, imagens e outros conteúdos para que o navegador saiba “o que é o quê” (título, parágrafo, link, imagem, seção etc.).
+- [Sumário](#sumário)
+- [Sobre o material](#sobre-o-material)
+- [Aula 01 - Introdução ao HTML](#aula-01---introdução-ao-html)
+  - [Objetivos](#objetivos)
+  - [Conteúdo abordado](#conteúdo-abordado)
+    - [Estrutura básica do documento](#estrutura-básica-do-documento)
+    - [Títulos e parágrafos](#títulos-e-parágrafos)
+    - [Ênfase, destaque e texto inline](#ênfase-destaque-e-texto-inline)
+    - [Listas](#listas)
+    - [Links e navegação](#links-e-navegação)
+    - [Imagens e mídia](#imagens-e-mídia)
+    - [Estrutura semântica da página](#estrutura-semântica-da-página)
+    - [Tabelas](#tabelas)
+    - [Formulários](#formulários)
+  - [Exemplos](#exemplos)
+    - [Lista não ordenada](#lista-não-ordenada)
+    - [Menu de navegação](#menu-de-navegação)
+    - [Imagem com descrição](#imagem-com-descrição)
+    - [Formulário simples](#formulário-simples)
+    - [Tabela simples](#tabela-simples)
+  - [Boas práticas](#boas-práticas)
+  - [Recursos adicionais](#recursos-adicionais)
 
-### Estrutura básica do documento
+---
 
-<!DOCTYPE html> não é uma tag, é uma instrução que informa ao navegador que o documento segue o padrão HTML5 e deve ser renderizado no modo padrão.
+## Sobre o material
 
-<html> é o elemento raiz: tudo que faz parte da página (head e body) fica dentro dele, e o atributo lang indica o idioma, ajudando leitores de tela e motores de busca.
+Este repositório reúne os conteúdos da disciplina **Autoria Web**. O objetivo é servir como apoio às aulas, facilitando a consulta, a organização do conteúdo e a evolução do material ao longo do curso.
 
-<head> contém metadados: título, codificação (<meta charset>), descrição, links para CSS, scripts, ícones, entre outros, que normalmente não aparecem diretamente na tela.
+---
 
-<title> define o texto da aba/janela do navegador e é importante para SEO (Search Engine Optimization) e usabilidade (“em que página estou?”).
+## Aula 01 - Introdução ao HTML
 
-<meta> insere metadados diversos, como charset, viewport para responsividade e descrições para mecanismos de busca.
+**Data:** 30/04
 
-<body> contém todo o conteúdo visível e interativo da página: textos, imagens, links, formulários, menus, etc.
+### Objetivos
 
-### Títulos e parágrafos
+Ao final desta aula, o estudante deverá ser capaz de:
 
-HTML usa elementos específicos para organizar o texto em títulos e parágrafos, criando hierarquia de conteúdo.
+- Compreender a estrutura básica de um documento HTML.
+- Identificar as principais tags semânticas.
+- Organizar textos, listas, links, imagens, tabelas e formulários.
+- Aplicar boas práticas de acessibilidade e organização do conteúdo.
 
-<h1> … <h6>: representam níveis de título, sendo <h1> o título principal da página, <h2> subtítulos, e assim por diante até <h6>.
+### Conteúdo abordado
 
-<p>: representa um parágrafo de texto; cada parágrafo deve ser envolvido por um <p> separado em vez de usar quebras de linha aleatórias.
+#### Estrutura básica do documento
 
-<br>: insere apenas uma quebra de linha dentro de um parágrafo; deve ser usado com moderação, pois não cria nova unidade semântica como um <p>.
+- `<!DOCTYPE html>` informa ao navegador que o documento segue o padrão HTML5.
+- `<html>` é o elemento raiz da página.
+- `<head>` reúne metadados, título, links externos e configurações.
+- `<title>` define o texto exibido na aba do navegador.
+- `<meta>` adiciona informações como codificação, viewport e descrição.
+- `<body>` contém o conteúdo visível da página.
 
-Boas práticas: usar apenas um <h1> por página e seguir a hierarquia (h1 → h2 → h3) ajuda na organização lógica, acessibilidade e SEO.
+#### Títulos e parágrafos
 
-### Ênfase, destaque e texto inline
+- `<h1>` a `<h6>` representam níveis de título.
+- `<p>` representa um parágrafo.
+- `<br>` insere quebra de linha dentro de um bloco de texto.
 
-Para dar significado à ênfase e destaque, existem tags específicas:
+#### Ênfase, destaque e texto inline
 
-<strong>: indica que o conteúdo é de grande importância; por padrão é renderizado em negrito e é reconhecido pelos leitores de tela como ênfase forte.
+- `<strong>` indica importância forte.
+- `<em>` indica ênfase.
+- `<span>` é um contêiner inline genérico.
 
-<em>: indica ênfase (“entonação” na leitura); por padrão é itálico, mas o ponto central é o significado, não o estilo.
+#### Listas
 
-<span>: contêiner genérico inline, usado para aplicar estilos ou atributos a trechos pequenos de texto quando não houver uma tag semântica mais adequada.
+- `<ul>` cria uma lista não ordenada.
+- `<ol>` cria uma lista ordenada.
+- `<li>` representa cada item da lista.
 
-Boas práticas: usar <strong> e <em> quando for realmente importante para o sentido da frase, e <span> apenas como último recurso, evitando perda de semântica.
+#### Links e navegação
 
-### Listas
+- `<a>` cria hiperlinks.
+- `<nav>` agrupa links de navegação.
 
-Listas são essenciais para agrupar itens relacionados de forma organizada.
+#### Imagens e mídia
 
-<ul> (unordered list): lista não ordenada, geralmente exibida com marcadores (bolinhas) para itens sem ordem específica (por exemplo, “hobbies”, “links úteis”).
+- `<img>` insere imagens.
+- `<audio>` insere conteúdo de áudio.
+- `<video>` insere conteúdo de vídeo.
 
-<ol> (ordered list): lista ordenada, numerada, usada quando a ordem importa (passos de um procedimento, ranking, etc.).
+#### Estrutura semântica da página
 
-<li> (list item): cada item individual de uma <ul> ou <ol> deve estar dentro de um <li>.
+- `<header>` define o cabeçalho.
+- `<main>` define o conteúdo principal.
+- `<section>` define uma seção temática.
+- `<article>` define conteúdo independente.
+- `<aside>` define conteúdo complementar.
+- `<footer>` define o rodapé.
+- `<div>` é um contêiner genérico sem semântica.
 
-Exemplo:
+#### Tabelas
+
+- `<table>` cria a tabela.
+- `<tr>` cria linhas.
+- `<th>` cria células de cabeçalho.
+- `<td>` cria células de dados.
+- `<thead>` agrupa o cabeçalho.
+- `<tbody>` agrupa o corpo da tabela.
+- `<caption>` adiciona legenda à tabela.
+
+#### Formulários
+
+- `<form>` define o formulário.
+- `<label>` associa rótulos aos campos.
+- `<input>` cria campos de entrada.
+- `<textarea>` cria campo de texto multilinha.
+- `<select>` e `<option>` criam listas de seleção.
+- `<button>` cria botões de ação.
+
+---
+
+### Exemplos
+
+#### Lista não ordenada
 
 ```html
 <ul>
@@ -71,18 +146,9 @@ Exemplo:
 </ul>
 ```
 
-### Links e navegação
+#### Menu de navegação
 
-Links conectam páginas e recursos na Web.
-
-<a> (anchor): cria um hiperlink por meio do atributo href, que pode apontar para outra página, seção da mesma página, e-mail, arquivo ou recurso externo.
-
-O texto entre <a> e </a> é o que o usuário vê e clica, devendo descrever claramente o destino (evitar apenas “clique aqui”).
-
-<nav>: agrupa blocos de links de navegação importantes, como menus principais, barras laterais de navegação ou rodapés com links globais.
-
-Exemplo típico de menu:
-
+```html
 <nav>
   <ul>
     <li><a href="#inicio">Início</a></li>
@@ -90,57 +156,31 @@ Exemplo típico de menu:
     <li><a href="#contato">Contato</a></li>
   </ul>
 </nav>
+```
 
-### Imagens e mídia
+#### Imagem com descrição
 
-Imagens, áudio e vídeo enriquecem a página, e também têm tags próprias.
-
-<img>: insere imagens; usa o atributo obrigatório src (caminho da imagem) e o atributo alt, que descreve a imagem para quem não pode vê-la (leitores de tela, conexão lenta, erro de carregamento).
-
-<audio> e <video>: elementos semânticos para incorporar áudio e vídeo com controles nativos (controls), podendo ter múltiplas fontes (<source>) para formatos diferentes.
-
-Exemplo:
-
+```html
 <img src="foto.jpg" alt="Foto do campus do IFRN ao pôr do sol">
+```
 
-### Estrutura semântica de página (layout)
+#### Formulário simples
 
-HTML5 trouxe elementos semânticos que substituem muitos usos genéricos de <div> para estruturar o layout.
+```html
+<form action="/inscrever" method="post">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" name="nome" required>
 
-<header>: cabeçalho da página ou de uma seção; costuma conter logo, título, navegação principal.
+  <label for="email">E-mail</label>
+  <input type="email" id="email" name="email" required>
 
-<main>: delimita o conteúdo principal da página, único por documento, facilitando navegação por leitores de tela.
+  <button type="submit">Enviar</button>
+</form>
+```
 
-<section>: seção temática do documento, geralmente com um título próprio (por exemplo, “Sobre”, “Serviços”, “Contato”).
+#### Tabela simples
 
-<article>: bloco de conteúdo independente e reutilizável (post de blog, notícia, card de produto, comentário), que faz sentido fora do contexto imediato.
-
-<aside>: conteúdo complementar ou relacionado, como barras laterais, boxes de “leia também”, anúncios.
-
-<footer>: rodapé da página ou de uma seção, com informações de autoria, direitos, links secundários, contatos, etc.
-
-<div>: contêiner genérico em bloco, sem significado semântico próprio, útil para agrupamento quando nenhum dos elementos semânticos se aplica.
-
-Esses elementos ajudam buscadores e tecnologias assistivas a entenderem a função de cada parte da página, melhorando acessibilidade e SEO.
-
-### Tabelas: <table>, <tr>, <th>, <td>, <thead>, <tbody>, <caption>
-
-Tabelas são usadas para dados tabulares (não para layout).
-
-<table>: contêiner principal da tabela.
-
-<tr> (table row): linha da tabela.
-
-<th> (table header): célula de cabeçalho, geralmente em negrito e centralizada, descreve a coluna ou linha.
-
-<td> (table data): célula de dados comum.
-
-<thead> e <tbody>: agrupam cabeçalho e corpo da tabela, respectivamente, melhorando estrutura e acessibilidade.
-
-<caption>: legenda da tabela, descrevendo sucintamente seu conteúdo.
-
-Exemplo:
-
+```html
 <table>
   <caption>Disciplinas do curso</caption>
   <thead>
@@ -156,44 +196,26 @@ Exemplo:
     </tr>
   </tbody>
 </table>
-
-### Formulários: <form>, <label>, <input>, <textarea>, <select>, <button>
-
-Formulários coletam dados do usuário, e são fundamentais em sistemas Web.
-
-<form>: contêiner do formulário; usa atributos como action (para onde enviar) e method (GET/POST).
-
-<label>: rótulo de campo; associado a um controle pelo atributo for (ligado ao id do input), melhorando acessibilidade e usabilidade.
-
-<input>: campo de entrada genérico com tipos diversos (text, email, password, checkbox, radio, number, etc.), definidos pelo atributo type.
-
-<textarea>: campo de texto multilinha para mensagens mais longas.
-
-<select> e <option>: listas suspensas (combobox) para seleção de uma ou mais opções.
-
-<button>: botão clicável, usado para enviar o formulário (type="submit") ou para ações gerais (type="button").
-
-Exemplo:
-
-```html
-<form action="/inscrever" method="post">
-  <label for="nome">Nome</label>
-  <input type="text" id="nome" name="nome" required>
-
-  <label for="email">E-mail</label>
-  <input type="email" id="email" name="email" required>
-
-  <button type="submit">Enviar</button>
-</form>
 ```
 
-### Boas práticas com as principais tags
+---
 
-* Preferir tags semânticas (header, nav, main, section, article, aside, footer) em vez de excesso de <div> melhora acessibilidade, manutenção e SEO.
+### Boas práticas
 
-* Manter uma hierarquia coerente de títulos (h1 único, seguido de h2, h3 etc.) ajuda leitores de tela e organização do conteúdo.
+- Prefira tags semânticas em vez de excesso de `<div>`.
+- Mantenha uma hierarquia coerente de títulos.
+- Use `alt` em todas as imagens.
+- Associe corretamente `label` e `input`.
+- Use `<table>` apenas para dados tabulares.
+- Combine HTML semântico com CSS para layout, em vez de usar tabelas para posicionamento.
 
-* Sempre usar alt em <img> e <label> corretamente associados a campos de formulário aumenta muito a acessibilidade da página.
+---
 
-* Usar <table> apenas para dados tabulares; para layout, combinar HTML semântico com CSS (Flexbox, Grid), evitando gambiarras visuais.
+### Recursos adicionais
 
+- [MDN Web Docs - HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [W3C - HTML](https://www.w3.org/TR/html52/)
+
+---
+
+<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
