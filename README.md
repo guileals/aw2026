@@ -1,25 +1,20 @@
 <a id="readme-top"></a>
 
-<!-- PROJECT SHIELDS (opcional) -->
-<!--
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/usuario/repositorio.svg)]()
--->
-
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <h1>IFRN - Campus Macau</h1>
-  <h3>Curso Técnico Integrado em Informática</h3>
-  <h4>Autoria Web</h4>
-  <p><strong>Prof. Guilherme Leal Santos</strong></p>
+<div align="center" style="color: #333; background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
+  <p align="center">
+    <img src="assets/imgs/logo.png" alt="Logo do IFRN" width="400">
+  </p>
+  <h1>Autoria Web</h1>
+  <h2>Prof. Guilherme Leal Santos</h2>
 </div>
 
 ---
 
-## Sumário
-
-- [Sumário](#sumário)
+<details>
+  <summary><strong>Sumário</strong></summary>
+  
 - [Sobre o material](#sobre-o-material)
 - [Aula 01 - Introdução ao HTML](#aula-01---introdução-ao-html)
   - [Objetivos](#objetivos)
@@ -41,6 +36,7 @@
     - [Tabela simples](#tabela-simples)
   - [Boas práticas](#boas-práticas)
   - [Recursos adicionais](#recursos-adicionais)
+</details>
 
 ---
 
