@@ -8,54 +8,119 @@
   </head>
   <!-- contém o conteúdo visível da página -->
   <body>
-    <h1>Eu amei Autoria Web!</h1>
-    <!-- <h2>Eu amei Autoria Web!</h2>
-    <h3>Eu amei Autoria Web!</h3>
-    <h4>Eu amei Autoria Web!</h4>
-    <h5>Eu amei Autoria Web!</h5>
-    <h6>Eu amei Autoria Web!</h6> -->
+    <!-- <header>: define o cabeçalho. Exibe logo, título, nav... -->
+    <header>
+      <h1>Eu amei Autoria Web!</h1>
+      <!-- <h2>Eu amei Autoria Web!</h2>
+      <h3>Eu amei Autoria Web!</h3>
+      <h4>Eu amei Autoria Web!</h4>
+      <h5>Eu amei Autoria Web!</h5>
+      <h6>Eu amei Autoria Web!</h6> -->
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Início</a>
-        </li>
-        <li>
-          <a href="sobre.html">Sobre</a>
-        </li>
-        <li>
-          <a href="https://github.com/guileals/aw2026" target="_blank">Github</a>
-        </li>
-      </ul>
-    </nav>
-
-    <p>
-      Lorem ipsum <strong>dolor</strong>, sit amet consectetur adipisicing elit.
-      Odit, nam. Iure velit omnis dolor sunt quam ut sed reprehenderit veniam
-      excepturi ea ab nihil, sapiente officia sint quae repudiandae? Saepe.
-    </p>
-    <br />
-    <p>
-      Lorem ipsum, <em>dolor</em> sit amet consectetur adipisicing elit.
-      Consectetur quae officiis saepe asperiores voluptas quos reiciendis
-      provident laudantium nam sunt voluptates, a officia illo tenetur eum iusto
-      voluptate? Nobis, esse.
-    </p>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Início</a>
+          </li>
+          <li>
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li>
+            <a href="https://github.com/guileals/aw2026" target="_blank"
+              >Github</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <br />
 
-    <p>Dicas para alcançar os seus objetivos:</p>
-    <ul>
-      <li>Foco</li>
-      <li>Força</li>
-      <li>Fé</li>
-    </ul>
+    <!-- 
+      <main>: delimita o conteúdo principal da página, único por documento, 
+      facilitando navegação por leitores de tela 
+    -->
+    <main>
+      <!-- 
+        <section>: seção temática do documento, geralmente com um título próprio
+      -->
+      <section>
+        <h2>Seção 1</h2>
 
-    <p>O que fazer quando chegar no lab?</p>
-    <ol>
-      <li>Ligar o PC</li>
-      <li>Iniciar a VM no Github Codespaces</li>
-      <li>Prestar atenção no professor</li>
-    </ol>
+        <!-- 
+          <div>: contêiner genérico em bloco, sem significado semântico próprio, 
+          útil para agrupamento quando nenhum dos elementos semânticos se aplica.
+        -->
+        <div>
+          <img src="assets/imgs/caramelo.jpg" alt="Cachorro caramelo" />
+        </div>
+
+        <!-- 
+          <article>: bloco de conteúdo independente e reutilizável 
+          (post de blog, notícia, card de produto, comentário), 
+          que faz sentido fora do contexto imediato. 
+        -->
+        <article>
+          <p>
+            Lorem ipsum <strong>dolor</strong>, sit amet consectetur adipisicing
+            elit. Odit, nam. Iure velit omnis dolor sunt quam ut sed
+            reprehenderit veniam excepturi ea ab nihil, sapiente officia sint
+            quae repudiandae? Saepe.
+          </p>
+        </article>
+      </section>
+      <br />
+
+      <section>
+        <h2>Seção 2</h2>
+        <img
+          src="assets/imgs/foto.png"
+          alt="Foto pessoal de frente em preto e branco"
+        />
+        <p>
+          Lorem ipsum, <em>dolor</em> sit amet consectetur adipisicing elit.
+          Consectetur quae officiis saepe asperiores voluptas quos reiciendis
+          provident laudantium nam sunt voluptates, a officia illo tenetur eum
+          iusto voluptate? Nobis, esse.
+        </p>
+      </section>
+      <br />
+
+      <section>
+        <h2>Seção 3</h2>
+        <img src="https://github.com/guileals.png" alt="Avatar do Github" />
+        <p>Dicas para alcançar os seus objetivos:</p>
+        <ul>
+          <li>Foco</li>
+          <li>Força</li>
+          <li>Fé</li>
+        </ul>
+      </section>
+      <br />
+
+      <section>
+        <h2>Seção 4</h2>
+        <img
+          src="https://www.rbsdirect.com.br/imagesrc/25743559.jpg"
+          alt="Nota de 200 com um cachorro caramelo"
+        />
+        <p>O que fazer quando chegar no lab?</p>
+        <ol>
+          <li>Ligar o PC</li>
+          <li>Iniciar a VM no Github Codespaces</li>
+          <li>Prestar atenção no professor</li>
+        </ol>
+      </section>
+      <br />
+    </main>
+
+    <!-- 
+      <footer>: rodapé da página ou de uma seção, com informações de autoria, 
+      direitos, links secundários, contatos, etc. 
+    -->
+    <footer>
+      <h3>IFRN - Campus Macau</h3>
+      <p>Desenvolvido por Prof. Guilherme Leal</p>
+    </footer>
   </body>
 </html>
